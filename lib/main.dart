@@ -1,7 +1,7 @@
-import 'package:books_store/presentation/views/resources/color_manager.dart';
-import 'package:books_store/presentation/views/splash.dart';
+import 'package:books_store/presentation/resources/color_manager.dart';
+import 'package:books_store/presentation/screens/splash/splash.dart';
 import 'package:flutter/material.dart';
-import 'presentation/views/resources/routes_manager.dart';
+import 'presentation/resources/routes_manager.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

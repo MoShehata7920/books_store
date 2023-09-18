@@ -1,6 +1,6 @@
-import 'package:books_store/presentation/views/resources/strings_manager.dart';
-import 'package:books_store/presentation/views/home.dart';
-import 'package:books_store/presentation/views/splash.dart';
+import 'package:books_store/presentation/resources/strings_manager.dart';
+import 'package:books_store/presentation/screens/home/view/home.dart';
+import 'package:books_store/presentation/screens/splash/splash.dart';
 import 'package:flutter/material.dart';
 
 class Routes {
@@ -15,7 +15,7 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (context) => const SplashScreen());
 
       case Routes.home:
-        return MaterialPageRoute(builder: (context) => const HomeScreen());
+        return MaterialPageRoute(builder: (context) => const HomeScreenView());
 
       default:
         return unDefinedRoute();
