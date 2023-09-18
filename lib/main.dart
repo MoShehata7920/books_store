@@ -1,27 +1,26 @@
-import 'package:books_store/splash_screen/splash.dart';
+import 'package:books_store/presentation/views/resources/color_manager.dart';
+import 'package:books_store/presentation/views/splash.dart';
 import 'package:flutter/material.dart';
-import 'resources/routes_manager.dart';
+import 'presentation/views/resources/routes_manager.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: ColorsManager.primaryBackgroundColor,
+      ),
       debugShowCheckedModeBanner: false,
       onGenerateRoute: RouteGenerator.getRoute,
       initialRoute: Routes.splash,
-      home: SplashScreen(),
+      home: const SplashScreen(),
     );
   }
 }

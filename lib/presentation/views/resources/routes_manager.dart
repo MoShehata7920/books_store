@@ -1,6 +1,6 @@
-import 'package:books_store/resources/strings_manager.dart';
-import 'package:books_store/screens/home/home.dart';
-import 'package:books_store/splash_screen/splash.dart';
+import 'package:books_store/presentation/views/resources/strings_manager.dart';
+import 'package:books_store/presentation/views/home.dart';
+import 'package:books_store/presentation/views/splash.dart';
 import 'package:flutter/material.dart';
 
 class Routes {
