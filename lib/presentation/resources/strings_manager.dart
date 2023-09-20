@@ -13,4 +13,8 @@ class AppStrings {
   // Book Details Screen
   static const String freePreview = "Free Preview";
   static const String canAlsoSee = "You can also like";
+
+  // Search Screen
+  static const String search = "Search";
+  static const String searchResult = "Search Result";
 }

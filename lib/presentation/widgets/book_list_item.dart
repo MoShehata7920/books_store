@@ -8,8 +8,8 @@ import 'package:books_store/presentation/services/utils.dart';
 import 'package:books_store/presentation/widgets/book_rating.dart';
 import 'package:flutter/material.dart';
 
-class BestSellerItem extends StatelessWidget {
-  const BestSellerItem({super.key});
+class BookListViewItem extends StatelessWidget {
+  const BookListViewItem({super.key});
 
   @override
   Widget build(BuildContext context) {
