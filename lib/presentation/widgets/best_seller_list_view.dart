@@ -7,15 +7,13 @@ class BestSellerListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-        physics: const NeverScrollableScrollPhysics(),
-        padding: EdgeInsets.zero,
-        itemCount: 10,
-        itemBuilder: (context, index) {
-          return const Padding(
-            padding: EdgeInsets.symmetric(vertical: AppPadding.p10),
-            child: BestSellerItem(),
-          );
-        });
+    return Column(
+      children: List.generate(10, (index) {
+        return const Padding(
+          padding: EdgeInsets.symmetric(vertical: AppPadding.p10),
+          child: BestSellerItem(),
+        );
+      }),
+    );
   }
 }

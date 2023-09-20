@@ -21,7 +21,9 @@ class BestSellerItem extends StatelessWidget {
       },
       child: Padding(
         padding: const EdgeInsets.symmetric(
-            horizontal: AppPadding.p25, vertical: AppPadding.p6),
+          horizontal: AppPadding.p25,
+          vertical: AppPadding.p6,
+        ),
         child: SizedBox(
           height: AppSize.s140,
           child: Row(
@@ -30,13 +32,14 @@ class BestSellerItem extends StatelessWidget {
                 aspectRatio: 2.7 / 4,
                 child: Container(
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(AppSize.s16),
-                      image: const DecorationImage(
-                        fit: BoxFit.fill,
-                        image: AssetImage(
-                          ImagesAssets.testImage,
-                        ),
-                      )),
+                    borderRadius: BorderRadius.circular(AppSize.s16),
+                    image: const DecorationImage(
+                      fit: BoxFit.fill,
+                      image: AssetImage(
+                        ImagesAssets.testImage,
+                      ),
+                    ),
+                  ),
                 ),
               ),
               const SizedBox(
