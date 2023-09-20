@@ -8,7 +8,7 @@ class AppStrings {
   static const String noRouteFound = "No Route Found";
 
   // Home Screen
-  static const String bestSeller = "Best Seller";
+  static const String newest = "Newest Books";
 
   // Book Details Screen
   static const String freePreview = "Free Preview";
