@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.2
+  equatable: ^2.0.5
   flutter:
     sdk: flutter
   flutter_animate: ^4.2.0+1
@@ -68,7 +69,5 @@ flutter:
     - family: GT Sectra Fine
       fonts:
         - asset: assets\fonts\GT Sectra Fine Regular.ttf
-
-  #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
