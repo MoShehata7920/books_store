@@ -1,4 +1,5 @@
 import 'package:books_store/presentation/resources/strings_manager.dart';
+import 'package:books_store/presentation/screens/book_details/view/book_detials_view.dart';
 import 'package:books_store/presentation/screens/home/view/home.dart';
 import 'package:books_store/presentation/screens/splash/splash.dart';
 import 'package:flutter/material.dart';
@@ -6,6 +7,7 @@ import 'package:flutter/material.dart';
 class Routes {
   static const String splash = "/";
   static const String home = "/home";
+  static const String bookDetails = "/bookDetails";
 }
 
 class RouteGenerator {
@@ -16,6 +18,9 @@ class RouteGenerator {
 
       case Routes.home:
         return MaterialPageRoute(builder: (context) => const HomeScreenView());
+
+      case Routes.bookDetails:
+        return MaterialPageRoute(builder: (context) => const BookDetailsView());
 
       default:
         return unDefinedRoute();

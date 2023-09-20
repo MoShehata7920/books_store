@@ -9,4 +9,8 @@ class AppStrings {
 
   // Home Screen
   static const String bestSeller = "Best Seller";
+
+  // Book Details Screen
+  static const String freePreview = "Free Preview";
+  static const String canAlsoSee = "You can also like";
 }
