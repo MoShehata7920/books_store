@@ -1,7 +1,7 @@
 import 'package:books_store/presentation/resources/strings_manager.dart';
 import 'package:books_store/presentation/resources/values_manager.dart';
 import 'package:books_store/presentation/services/styles.dart';
-import 'package:books_store/presentation/widgets/neswest_books_list_view.dart';
+import 'package:books_store/presentation/widgets/newest_books_list_view.dart';
 import 'package:books_store/presentation/widgets/custom_app_bar.dart';
 import 'package:books_store/presentation/widgets/featured_books_list.dart';
 import 'package:flutter/cupertino.dart';

@@ -19,7 +19,7 @@ class BookDetailsSection extends StatelessWidget {
           padding: EdgeInsets.symmetric(
             horizontal: size.width * 0.2,
           ),
-          child: const FeaturedBooksItemListView(),
+          child: const FeaturedBooksItemListView(imageUrl: 'https://th.bing.com/th/id/R.7c7c1ece345294d2fd37d62c9c3a5d99?rik=LBePt0AXSdkr0A&pid=ImgRaw&r=0',),
         ),
         const SizedBox(
           height: AppSize.s40,
