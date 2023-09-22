@@ -20,7 +20,8 @@ class BookListViewItem extends StatelessWidget {
 
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, Routes.bookDetails);
+        Navigator.pushNamed(context, Routes.bookDetails,
+            arguments: {'bookModel': bookModel});
       },
       child: Padding(
         padding: const EdgeInsets.symmetric(

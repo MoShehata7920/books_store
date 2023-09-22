@@ -1,3 +1,4 @@
+import 'package:books_store/data/models/book_model/book_model.dart';
 import 'package:books_store/presentation/resources/strings_manager.dart';
 import 'package:books_store/presentation/screens/book_details/view/book_detials_view.dart';
 import 'package:books_store/presentation/screens/home/view/home.dart';
@@ -13,7 +14,8 @@ class Routes {
 }
 
 class RouteGenerator {
-  static Route<dynamic> getRoute(RouteSettings settings) {
+  static Route<dynamic> getRoute(RouteSettings settings,
+      {BookModel? bookModel}) {
     switch (settings.name) {
       case Routes.splash:
         return MaterialPageRoute(builder: (context) => const SplashScreen());
@@ -22,7 +24,9 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (context) => const HomeScreenView());
 
       case Routes.bookDetails:
-        return MaterialPageRoute(builder: (context) => const BookDetailsView());
+        return MaterialPageRoute(
+          builder: (context) => BookDetailsView(bookModel: bookModel),
+        );
 
       case Routes.search:
         return MaterialPageRoute(builder: (context) => const SearchView());
