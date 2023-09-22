@@ -1,7 +1,6 @@
 import 'package:books_store/presentation/resources/strings_manager.dart';
 import 'package:books_store/presentation/resources/values_manager.dart';
 import 'package:books_store/presentation/services/styles.dart';
-import 'package:books_store/presentation/widgets/book_list_item.dart';
 import 'package:books_store/presentation/widgets/custom_search_text_field.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -49,7 +48,8 @@ class SearchResultListView extends StatelessWidget {
       itemBuilder: (context, index) {
         return const Padding(
           padding: EdgeInsets.symmetric(vertical: AppPadding.p10),
-          child: BookListViewItem(),
+          // child: BookListViewItem(bookModel: null,),
+          child: Text(''),
         );
       },
     );

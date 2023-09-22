@@ -8,7 +8,11 @@ class BookRating extends StatelessWidget {
   const BookRating({
     super.key,
     this.mainAxisAlignment = MainAxisAlignment.start,
+    required this.bookRating,
+    required this.ratingsCount,
   });
+
+  final int bookRating, ratingsCount;
 
   final MainAxisAlignment mainAxisAlignment;
 
@@ -23,15 +27,15 @@ class BookRating extends StatelessWidget {
         const SizedBox(
           width: AppSize.s7,
         ),
-        const Text(
-          "4.8",
+        Text(
+          bookRating.toString(),
           style: Styles.textStyle16,
         ),
         const SizedBox(
           width: AppSize.s5,
         ),
         Text(
-          "(245)",
+          "($ratingsCount)",
           style:
               Styles.textStyle14.copyWith(color: ColorsManager.secondaryText),
         )
